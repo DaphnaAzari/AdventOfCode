@@ -39,7 +39,7 @@ while (password.includes(null)) {
         console.log("index", index);
         let position = hash[5];
 
-        //if position is smaller than8 &
+        //if position is smaller than 8 &
         //password posission === null, similar to before
         if (position < 8 && password[position] === null) {
             //changed the index to 6 for 7th char:
