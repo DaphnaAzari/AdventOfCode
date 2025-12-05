@@ -44,7 +44,7 @@ for (const line of lines) {
         //(neededDigits - i - 1) : how many digits are still needed after this pick
         //12- current i -1 
         //this way we know how many more digits we need to find. 
-        //**first part is last index i looked at MINUS number of digits needed after thisone
+        //**first part is last index I looked at MINUS number of digits needed after thisone
         const end = (digits.length - 1) - (neededDigits - i - 1);
         console.log("end", end)
 

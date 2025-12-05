@@ -28,7 +28,6 @@ for (const line of lines) {
     let firstDigit = 0;
     let firstIndex = 0;
 
-    // leave room for second digit
     //first digit must leave room for a second digit
     //(cant allow first digit to be at the last index, as then no space for second one)
     for (let i = 0; i < digits.length - 1; i++) {
