@@ -1,0 +1,3 @@
+rect AxB
+rotate row y=A by B
+rotate column x=A by B
