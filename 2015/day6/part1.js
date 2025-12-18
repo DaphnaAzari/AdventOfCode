@@ -32,14 +32,18 @@ const lights = [];
 //inner loop will fill each row with false
 //x is row (horizontal)  & y column
 
-for (let x = 0; x < gridSize; x++) {
+const grid = [];
+
+for (const line of lines) {
     const row = [];
-    for (let y = 0; y < gridSize; y++) {
-        row.push(false); // light is off!!!
+    for (let col = 0; col < line.length; col++) {
+        row.push(line[col]);
     }
-    lights.push(row);
+    grid.push(row);
 }
 
+// Confirm it looks like your input (prints each row as a string)
+console.log(grid.map(r => r.join("")).join("\n"));
 //loop over instruction lines (that are in input file):
 for (const line of lines) {
 
